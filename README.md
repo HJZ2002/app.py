@@ -49,9 +49,3 @@ The system follows industry-standard security practices:
 
 ---
 
-## 🚀 Running the Application
-
-### 1. Install Dependencies
-
-```bash
-pip install flask werkzeug pyjwt flask-cors
