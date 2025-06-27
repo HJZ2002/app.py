@@ -1,40 +1,57 @@
-Laundry Management System
-A secure web-based laundry management application built with Flask, SQLite, and Bootstrap.
+# 🧺 Laundry Management System
 
-System Overview
-This system provides a comprehensive solution for laundry businesses to track and manage customer orders. The application offers user authentication, order management, and status tracking in a responsive web interface.
+A secure web-based laundry management application built using **Flask**, **SQLite**, and **Bootstrap**.  
+Designed to help laundry businesses manage orders, track status, and handle customer operations efficiently.
 
-Security Features
-Password Hashing: All user passwords are securely hashed using werkzeug.security before storage
-JWT Authentication: JSON Web Tokens used for secure session management
-Token Expiration: Tokens automatically expire after a configured time period
-Authorization Headers: API endpoints protected with Bearer token validation
-Form Validation: Input validation on both client and server side
-CORS Protection: Cross-Origin Resource Sharing configured for API security
-SQL Injection Prevention: Parameterized queries for all database operations
-XSS Protection: Data sanitization before rendering in templates
-Session Management: Secure session handling for user state
-Error Handling: Secure error responses that don't expose system details
-HTTPS Support: Compatible with HTTPS when deployed with proper certificates
-Route Protection: Authenticated routes protected via decorators
-Token Verification: Complete validation of token integrity and signature
-Development Tools
-Backend: Flask web framework
-Database: SQLite with prepared statements
-Frontend: HTML5, CSS3, JavaScript with Bootstrap 5
-Authentication: JWT (JSON Web Tokens)
-HTTP Tunneling: LocalXpose for development access
-Running the Application
-Install dependencies: pip install flask werkzeug pyjwt flask-cors
-Ensure SQLite is available
-Run the application: python app.py
-Access at http://localhost:8000
-Deployment
-The application can be deployed using:
+---
 
-LocalXpose HTTP tunnel for temporary public access
-Apache with mod_wsgi for production environments
-Gunicorn or Waitress for production-grade serving
-Database Structure
-Users: Authentication and user management
-LaundryItems: Order tracking with status and customer information
+## 🔍 System Overview
+
+This application provides an all-in-one platform for laundry business operations.  
+Features include:
+
+- Customer order tracking
+- Status updates
+- User authentication
+- Responsive web interface
+
+---
+
+## 🔐 Security Features
+
+The system follows industry-standard security practices:
+
+- **Password Hashing:** Secure hashing with `werkzeug.security`
+- **JWT Authentication:** Secure sessions with JSON Web Tokens
+- **Token Expiration:** Configurable token timeouts
+- **Authorization Headers:** API protection using Bearer tokens
+- **Form Validation:** Input validation on both client & server
+- **CORS Protection:** Cross-Origin Resource Sharing configured for safety
+- **SQL Injection Prevention:** All DB queries use parameterized statements
+- **XSS Protection:** Output sanitization before rendering templates
+- **Session Management:** Secure handling of user sessions
+- **Error Handling:** Minimal error output to avoid leaking system details
+- **HTTPS Support:** HTTPS-compatible when deployed with valid certificates
+- **Route Protection:** Authenticated routes secured via decorators
+- **Token Verification:** Full validation of token integrity and signatures
+
+---
+
+## 🛠️ Development Tools
+
+| Component     | Tech Used                   |
+|---------------|-----------------------------|
+| **Backend**   | Flask                       |
+| **Database**  | SQLite (with prepared queries) |
+| **Frontend**  | HTML5, CSS3, JavaScript, Bootstrap 5 |
+| **Authentication** | JWT (JSON Web Tokens) |
+| **HTTP Tunnel (Dev)** | LocalXpose          |
+
+---
+
+## 🚀 Running the Application
+
+### 1. Install Dependencies
+
+```bash
+pip install flask werkzeug pyjwt flask-cors
