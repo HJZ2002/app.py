@@ -1,3 +1,4 @@
+Laundry Management System
 A secure web-based laundry management application built with Flask, SQLite, and Bootstrap.
 
 System Overview
